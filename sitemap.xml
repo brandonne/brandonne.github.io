@@ -326,6 +326,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://openvoiceos.github.io/community-docs/troubleshooting_network/</loc>
+         <lastmod>2023-03-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://openvoiceos.github.io/community-docs/troubleshooting_ovos_core/</loc>
          <lastmod>2023-03-14</lastmod>
          <changefreq>daily</changefreq>

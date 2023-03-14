@@ -199,6 +199,8 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../troubleshooting_installation/">Troubleshooting Installation</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../troubleshooting_network/">Troubleshooting Network</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../troubleshooting_wakeword/">Troubleshooting Wakeword</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../troubleshooting_ovos_core/">Troubleshooting OVOS Core</a>
@@ -210,6 +212,10 @@
     <li class="toctree-l2"><a class="reference internal" href="#troubleshooting-commands">Troubleshooting Commands</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#problemfix">Problem/Fix</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#install-fails-to-create-ovos-wifi-hotspot">Install fails to create OVOS wifi hotspot</a>
+    </li>
+        </ul>
     </li>
     </ul>
                   </li>
@@ -261,10 +267,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="troubleshooting-the-backend">Troubleshooting the Backend</h1>
+                <h1 id="troubleshooting-installation">Troubleshooting Installation</h1>
 <h2 id="architecture">Architecture</h2>
 <h2 id="troubleshooting-commands">Troubleshooting Commands</h2>
 <h2 id="problemfix">Problem/Fix</h2>
+<h3 id="install-fails-to-create-ovos-wifi-hotspot">Install fails to create OVOS wifi hotspot</h3>
+<p>There is a known issue with balena (the wifi access point app) when it detects a WPA3 network of any sort, it fails.
+<a href="https://github.com/balena-os/wifi-connect/issues/416">More Information</a></p>
               
             </div>
           </div><footer>
