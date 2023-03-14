@@ -106,6 +106,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://openvoiceos.github.io/community-docs/config_security/</loc>
+         <lastmod>2023-03-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://openvoiceos.github.io/community-docs/config_skillls/</loc>
          <lastmod>2023-03-14</lastmod>
          <changefreq>daily</changefreq>
@@ -121,11 +126,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://openvoiceos.github.io/community-docs/first_boot/</loc>
-         <lastmod>2023-03-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://openvoiceos.github.io/community-docs/friends/</loc>
          <lastmod>2023-03-14</lastmod>
          <changefreq>daily</changefreq>
@@ -136,7 +136,27 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://openvoiceos.github.io/community-docs/hardware_and_prerequisites/</loc>
+         <loc>https://openvoiceos.github.io/community-docs/gs_first_boot/</loc>
+         <lastmod>2023-03-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://openvoiceos.github.io/community-docs/gs_hardware/</loc>
+         <lastmod>2023-03-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://openvoiceos.github.io/community-docs/gs_installation_choices/</loc>
+         <lastmod>2023-03-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://openvoiceos.github.io/community-docs/gs_installing_image/</loc>
+         <lastmod>2023-03-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://openvoiceos.github.io/community-docs/gs_next_steps/</loc>
          <lastmod>2023-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -157,16 +177,6 @@
     </url>
     <url>
          <loc>https://openvoiceos.github.io/community-docs/install_skills/</loc>
-         <lastmod>2023-03-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://openvoiceos.github.io/community-docs/installation_choices/</loc>
-         <lastmod>2023-03-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://openvoiceos.github.io/community-docs/installing_image/</loc>
          <lastmod>2023-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -206,11 +216,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://openvoiceos.github.io/community-docs/next_steps/</loc>
-         <lastmod>2023-03-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://openvoiceos.github.io/community-docs/oca/</loc>
          <lastmod>2023-03-14</lastmod>
          <changefreq>daily</changefreq>
@@ -241,11 +246,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://openvoiceos.github.io/community-docs/ovos_security/</loc>
-         <lastmod>2023-03-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://openvoiceos.github.io/community-docs/personal_backend/</loc>
          <lastmod>2023-03-14</lastmod>
          <changefreq>daily</changefreq>
@@ -272,11 +272,6 @@
     </url>
     <url>
          <loc>https://openvoiceos.github.io/community-docs/selecting_backend/</loc>
-         <lastmod>2023-03-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://openvoiceos.github.io/community-docs/setup_network/</loc>
          <lastmod>2023-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -322,6 +317,11 @@
     </url>
     <url>
          <loc>https://openvoiceos.github.io/community-docs/troubleshooting_installation/</loc>
+         <lastmod>2023-03-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://openvoiceos.github.io/community-docs/troubleshooting_intro/</loc>
          <lastmod>2023-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>

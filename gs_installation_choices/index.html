@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://openvoiceos.github.io/community-docs/installing_image/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://openvoiceos.github.io/community-docs/gs_installation_choices/" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Installing an Image - OVOS User Documentation</title>
+    <title>Installation Choices - OVOS User Documentation</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Installing an Image";
-        var mkdocs_page_input_path = "installing_image.md";
-        var mkdocs_page_url = "/community-docs/installing_image/";
+        var mkdocs_page_name = "Installation Choices";
+        var mkdocs_page_input_path = "gs_installation_choices.md";
+        var mkdocs_page_url = "/community-docs/gs_installation_choices/";
       </script>
     
     <script src="../js/jquery-3.6.0.min.js" defer></script>
@@ -49,21 +49,17 @@
               </ul>
               <p class="caption"><span class="caption-text">Getting Started Guide</span></p>
               <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="../hardware_and_prerequisites/">Hardware and Prerequisites</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../gs_hardware/">Hardware</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../installation_choices/">Installation Choices</a>
-                  </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Installing an Image</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Installation Choices</a>
     <ul class="current">
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../first_boot/">First boot</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../gs_installing_image/">Installing an Image</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../setup_network/">Network setup</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../gs_first_boot/">First boot</a>
                   </li>
-                  <li class="toctree-l1"><a class="" href="../setup_ovos.md">Configuration</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../next_steps/">Next Steps</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../gs_next_steps/">Next Steps</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Architecture</span></p>
@@ -83,8 +79,6 @@
                   <li class="toctree-l1"><a class="reference internal" href="../arch_skills/">Skills</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../statements/">Statements</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ovos_security/">OpenVoiceOS Security</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Hardware</span></p>
@@ -124,6 +118,8 @@
                   <li class="toctree-l1"><a class="" href="../config_skills.md">Skill Configuration</a>
                   </li>
                   <li class="toctree-l1"><a class="" href="../config_wake_word.md">CHanging the Wake Word</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../config_security/">OpenVoiceOS Security</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Features</span></p>
@@ -199,7 +195,7 @@
               </ul>
               <p class="caption"><span class="caption-text">Troubleshooting</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="" href="../troubleshooting_intro.md">Introduction to Troubleshooting</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../troubleshooting_intro/">Introduction to Troubleshooting</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../troubleshooting_audio/">Troubleshooting Audio</a>
                   </li>
@@ -250,7 +246,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
           <li>Getting Started Guide &raquo;</li>
-      <li>Installing an Image</li>
+      <li>Installation Choices</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -260,36 +256,22 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="welcome-to-openvoice-os-getting-started-user-guide">Welcome To OpenVoice OS Getting Started User Guide</h1>
-<h1 id="installing-an-image">Installing an Image</h1>
-<p>[Which Image should I choose?] #todo</p>
-<h2 id="downloading-an-image">Downloading an Image</h2>
-<p>Buildroot Latest Images
--<a href="https://drive.google.com/file/d/1gTrQxMZEOV0J4ZrICyxfjA5cpNIjwDJP/view?usp=share_link">RPi3-64</a>
--<a href="https://drive.google.com/file/d/1PUtNXfZ5jMUlVAgyN-KXPdVdX6r51eBw/view?usp=share_link">RPi4-64</a>
-Manjaro Latest Images
--<a href="https://downloads.openvoiceos.com/images/manjaro/ovos-dev-edition-devkit-190822.img.gz">devkit</a> Aug 2022
--<a href="https://downloads.openvoiceos.com/images/manjaro/ovos-dev-edition-generic-090323-221429.img.xz">Generic</a> Mar 2023
--<a href="https://downloads.openvoiceos.com/images/manjaro/ovos-dev-edition-mark2-170223-091407.img.xz">Mark 2</a> Feb 2023
--<a href="https://downloads.openvoiceos.com/images/manjaro/ovos-dev-edition-respeaker-090223-172552.img.xz">Respeaker</a> Feb 2023
-Picroft Latest Images
--<a href="https://downloads.openvoiceos.com/images/picroft/github/workspace/pi-gen/deploy/image_2023-03-10-ovos-picroft-bullseye.zip">Debian Bullseye</a> Mar 2023
--<a href="https://downloads.openvoiceos.com/images/picroft/github/workspace/pi-gen/deploy/image_2023-03-12-raspbian-ovos.zip">Raspbian</a> Mar 2023</p>
-<h2 id="build-images-from-scratch">Build images from scratch:</h2>
-<ul>
-<li><a href="https://openvoiceos.github.io/community-docs/buildroot/">buildroot</a></li>
-<li><a href="https://openvoiceos.github.io/community-docs/manjaro/">manjaro</a></li>
-</ul>
-<h3 id="flashing-your-image">Flashing your image</h3>
-<p>Flashing your image to your sdcard or USB drive is not different from flashing any other image. For the non-technical users we advise to use the flashing utility from the Raspberry Pi Foundation which you can find <a href="https://www.raspberrypi.com/software/">here</a>.
-Under "CHOOSE OS" select custom at the very bottom of the list and browse to the downloaded image file. It is not required to unzip / unpack the image as the Raspberry Pi imager software can do that for you on the fly.
-Under "CHOOSE STORAGE" select your sdcard or USB device.</p>
-<p>If you have a Raspberry Pi 4 we recommend to use a good USB3.1 device. If you have a Raspberry Pi 3, use a proper sdcard. (From fast to slow: USB3.1 - sdcard - USB2)</p>
+<h1 id="installation-choices">Installation Choices</h1>
+<p>You can find a pdf version of a getting started guide <a href="https://github.com/OpenVoiceOS/ovos_assets/raw/master/printables/device-getting-started-guide.pdf">here</a></p>
+<h2 id="where-to-get-ovos">Where to get OVOS?</h2>
+<p>OVOS is in early stages, we publish our Raspberry Pi images for download but expect new bugs and new fixes on every release, we are not yet stable!</p>
+<p>These images are development images in alpha stage, bugs and incomplete features are guaranteed.</p>
+<h3 id="install-choices">Install choices</h3>
+<p>You can install OVOS either as an image, container, or manually.</p>
+<p>There are currently three image choices for OVOS.  Buildroot, Manjaro and Picroft.  You can also build images from scratch using Buildroot and Manjaro</p>
+<p>A docker container is available for Manjaro.</p>
+<p>In most cases images provide for the easiest install, if your hardware is supported.  Building your own image can provide for a complete custom build in a package, but is more of an involved process.  If you're familiar with Docker, then that option can provide a quick install.  Finally, building from scratch can be more involved, but provides the most flexibility.</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../installation_choices/" class="btn btn-neutral float-left" title="Installation Choices"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../first_boot/" class="btn btn-neutral float-right" title="First boot">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../gs_hardware/" class="btn btn-neutral float-left" title="Hardware"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../gs_installing_image/" class="btn btn-neutral float-right" title="Installing an Image">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -312,10 +294,10 @@ Under "CHOOSE STORAGE" select your sdcard or USB device.</p>
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../installation_choices/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../gs_hardware/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../first_boot/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../gs_installing_image/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
