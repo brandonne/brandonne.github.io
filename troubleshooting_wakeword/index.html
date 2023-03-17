@@ -113,7 +113,7 @@
                   </li>
                   <li class="toctree-l1"><a class="" href="../config_skills.md">Skill Configuration</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../config_wake_word/">CHanging the Wake Word</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../config_wake_word/">Changing the Wake Word</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../config_security/">OpenVoiceOS Security</a>
                   </li>
@@ -239,7 +239,10 @@
 <p>To verify that it is the Wake Word and not the microphone causing the issue, we will get OVOS to ask us a question that we can respond to.  In the OVOS cli type in the utterance "set timer".  OVOS will then ask how long of a timer you would like.  Speaking now should result in your utterance being transcribed.</p>
 <p>If your response is successfully transcribed, it is most likely the Wake Word engine causing the problem.</p>
 <h3 id="check-your-mycroftconf-file-to-see-what-plugin-and-wake-word-is-configured">Check your mycroft.conf file to see what plugin and wake word is configured.</h3>
-<p>Look at your mycoft.conf file and verify how your wake word is configured.  You can use <code>grep mycroft.conf /var/log/syslog</code> to determine the location of your configuration files that were loaded.  Look for the following lines (or similar):</p>
+<p>Determine which configuration files are being loaded</p>
+<pre><code>grep mycroft.conf /var/log/syslog
+</code></pre>
+<p>Look at your mycoft.conf file and verify how your wake word is configured.   Look for the following lines (or similar):</p>
 <pre><code> &quot;wake_word&quot;: &quot;hey_mycroft&quot;  ## this will match a hotword listed later in the config
  ...
    &quot;hotwords&quot;: {
@@ -263,6 +266,13 @@ voice - ovos_plugin_manager.wakewords:load_module:85 - INFO - Loading &quot;hey_
 voice - ovos_plugin_manager.wakewords:load_module:92 - INFO - Loaded the Wake Word plugin ovos-ww-plugin-precise
 </code></pre>
 <p>If you see an error about "failed to load plugin" make sure the plugin is installed. </p>
+<p>Use ovos-cli-client to see if the microphone is working and the wakeword is being triggered.
+<code>ovos-cli-client</code>
+Look for</p>
+<pre><code> 05:19:54.975 - voice - mycroft.listener.service:handle_wakeword:97 - INFO - Wakeword Detected: hey_mycroft
+ 05:19:55.555 - voice - mycroft.listener.service:handle_record_begin:71 - INFO - Begin Recording...
+ 05:19:57.052 - voice - mycroft.listener.service:handle_record_end:78 - INFO - End Recording...
+</code></pre>
 <h2 id="problemfix">Problem/Fix</h2>
               
             </div>

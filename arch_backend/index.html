@@ -117,7 +117,7 @@
                   </li>
                   <li class="toctree-l1"><a class="" href="../config_skills.md">Skill Configuration</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../config_wake_word/">CHanging the Wake Word</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../config_wake_word/">Changing the Wake Word</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../config_security/">OpenVoiceOS Security</a>
                   </li>
@@ -218,18 +218,22 @@
               
                 <h1 id="openvoiceos-backends">OpenVoiceOS Backends</h1>
 <p>A backend is a service that provides your device with additional tools to function, these could range from managing your skill settings to configuring certain aspects of your device. The backend is optional in OVOS, especially if you're running a single device. </p>
-<p>A backend can provide:
-- A nice web ui to configure device, this allows for you to configure once and push it to all your devices.
-- Free API services for weather and wolfram alpha
-- Collecting data, e.g. upload ww and utterance audio samples from all your devices</p>
-<p>Available backends:
-- Offline: no backend all configuration local
-- Personal: Self hosted minimal backend
-- OpenvoiceOS API Service: Not a true backend, provides a proxy for APIs for privacy
-- Selene: Provided by Mycroft.ai, can be <a href="https://github.com/MycroftAI/selene-backend">self hosted</a>.  The official Mycroft.ai hosting will likely be going away and is deprecated.
-- Neon: Coming soon</p>
+<p>A backend can provide:</p>
+<ul>
+<li>A nice web ui to configure device, this allows for you to configure once and push it to all your devices.</li>
+<li>Free API services for weather and wolfram alpha</li>
+<li>Collecting data, e.g. upload ww and utterance audio samples from all your devices</li>
+</ul>
+<p>Available backends:</p>
+<ul>
+<li>Offline: no backend all configuration local</li>
+<li>Personal: Self hosted minimal backend</li>
+<li>OpenvoiceOS API Service: Not a true backend, provides a proxy for APIs for privacy</li>
+<li>Selene: Provided by Mycroft.ai, can be <a href="https://github.com/MycroftAI/selene-backend">self hosted</a>.  The official Mycroft.ai hosting will likely be going away and is deprecated.</li>
+<li>Neon: Coming soon</li>
+</ul>
 <h2 id="selecting-a-backend">Selecting a backend</h2>
-<h1 id="fixme">fixme</h1>
+<p><strong>Editors Note</strong> coming soon, placeholder information</p>
 <p>You can go without a backend and go offline and use our free proxy for API services with no accounts.</p>
 <p>Install the skill-ovos-setup to get the prompt to setup a backend.  Without this installed, you will NOT hear the prompt to pick a backend.</p>
 <p>You can manually change mycroft.conf to enable a different backend if needed, but you will have to install setup skill and add "setup" to "ready_settings" in mycroft.conf</p>

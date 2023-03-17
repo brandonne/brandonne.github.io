@@ -113,7 +113,7 @@
                   </li>
                   <li class="toctree-l1"><a class="" href="../config_skills.md">Skill Configuration</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../config_wake_word/">CHanging the Wake Word</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../config_wake_word/">Changing the Wake Word</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../config_security/">OpenVoiceOS Security</a>
                   </li>
@@ -172,10 +172,6 @@
     <li class="toctree-l2"><a class="reference internal" href="#problemfix">Problem/fix</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#error-pulseaudio-sink-always-suspended">ERROR: pulseaudio sink always suspended</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#try-disabling-suspend-on-idle-in-etcpulsedefaultpa">Try disabling suspend-on-idle in /etc/pulse/default.pa</a>
-    </li>
-        </ul>
     </li>
         </ul>
     </li>
@@ -300,8 +296,8 @@ pip install ./ovos-cli-client
 </code></pre>
 <p>In the lower left you can observe the microphone levels, when you talk, the levels should increase.  If they don't ovos is probably using the wrong microphone.</p>
 <h3 id="gather-data">Gather Data</h3>
-<p>Before submitting an issue or asking a question on Element, please gather the following data.
-For Microphone issues:</p>
+<p>Before submitting an issue or asking a question on Element, please gather the following data.</p>
+<p>For Microphone issues:</p>
 <pre><code>arecord -l
 arecord -L | head -n9
 pactl list sources
@@ -315,12 +311,12 @@ pacmd dump
 </code></pre>
 <h2 id="additional-resources">Additional Resources</h2>
 <ul>
-<li>https://wiki.archlinux.org/title/PulseAudio/Troubleshooting</li>
+<li><a href="https://wiki.archlinux.org/title/PulseAudio/Troubleshooting">PulseAudio Troubleshooting</a></li>
 </ul>
 <h2 id="problemfix">Problem/fix</h2>
 <h5 id="error-pulseaudio-sink-always-suspended">ERROR: pulseaudio sink always suspended</h5>
-<h6 id="try-disabling-suspend-on-idle-in-etcpulsedefaultpa">Try disabling suspend-on-idle in /etc/pulse/default.pa</h6>
-<p>change this:</p>
+<p>Try disabling suspend-on-idle in /etc/pulse/default.pa</p>
+<p>Change this:</p>
 <pre><code>### Automatically suspend sinks/sources that become idle for too long
 load-module module-suspend-on-idle
 </code></pre>
@@ -328,7 +324,7 @@ load-module module-suspend-on-idle
 <pre><code>### Automatically suspend sinks/sources that become idle for too long
 #load-module module-suspend-on-idle
 </code></pre>
-<p>and then to restart it. There is quite a lot of variation in how people do this but killall pulseaudio is one option (it gets automatically started again).  If you want to be sure, you can restart the system.</p>
+<p>and then restart PulseAudio. There is quite a lot of variation in how people do this but killall pulseaudio is one option (it gets automatically started again).  If you want to be sure, you can restart the system.</p>
               
             </div>
           </div><footer>
