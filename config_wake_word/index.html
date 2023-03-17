@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://openvoiceos.github.io/community-docs/oca/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://openvoiceos.github.io/community-docs/config_wake_word/" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>OVOS Config Assistant - OVOS User Documentation</title>
+    <title>CHanging the Wake Word - OVOS User Documentation</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "OVOS Config Assistant";
-        var mkdocs_page_input_path = "oca.md";
-        var mkdocs_page_url = "/community-docs/oca/";
+        var mkdocs_page_name = "CHanging the Wake Word";
+        var mkdocs_page_input_path = "config_wake_word.md";
+        var mkdocs_page_url = "/community-docs/config_wake_word/";
       </script>
     
     <script src="../js/jquery-3.6.0.min.js" defer></script>
@@ -81,9 +81,9 @@
               </ul>
               <p class="caption"><span class="caption-text">Hardware</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="" href="../hardware_platforms.md">Platforms</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../hardware_platforms/">Platforms</a>
                   </li>
-                  <li class="toctree-l1"><a class="" href="../hardware_audio.md">Audio</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../hardware_audio/">Audio</a>
                   </li>
                   <li class="toctree-l1"><a class="" href="../hardware_video.md">Video</a>
                   </li>
@@ -96,24 +96,14 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../install_skills/">Installing Skills</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ovos_picroft/">PiCroft</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../install_raspbian/">Raspbian</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Configuration</span></p>
               <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="../ovos_core_intro/">OVOS Core Introduction</a>
-                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../config_ovos_core/">OVOS Core Configuration</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">OVOS Config Assistant</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#web-ui">Web UI</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#cli">CLI</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#python-utils">Python utils</a>
-    </li>
-    </ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../config_oca/">OVOS Config Assistant</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../config_homescreen/">Homescreen Configuration</a>
                   </li>
@@ -123,73 +113,31 @@
                   </li>
                   <li class="toctree-l1"><a class="" href="../config_skills.md">Skill Configuration</a>
                   </li>
-                  <li class="toctree-l1"><a class="" href="../config_wake_word.md">CHanging the Wake Word</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">CHanging the Wake Word</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#list-of-wake-word-plugins">List of Wake Word plugins</a>
+    </li>
+    </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../config_security/">OpenVoiceOS Security</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">Features</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../playing_music/">Playing music</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../playing_video/">Playing video</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="../OCP.md">OVOS Common Play</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../airplay/">Airplay</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../shell/">OVOS Shell</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../bigscreen/">Bigscreen</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../spotifyd/">Spotify connect</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../btspeaker/">Bluetooth speaker</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../intents/">Intents</a>
-                  </li>
-              </ul>
               <p class="caption"><span class="caption-text">Additional Services</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="" href="../selene_backend.md">Selene Backend</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../selene_backend/">Selene Backend</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../personal_backend/">Personal Backend</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../kdeconnect/">KDE Connect</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">Plugins</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../plugin_intro/">Introduction</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="../OPM.md">Plugin Manager</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../stt_plugins/">Speech To Text</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../tts_plugins/">Text To Speech</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../stt_server/">STT Server</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../tts_server/">TTS Server</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../translate_server/">Translate Server</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ww_plugins/">Wake Word</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../vad_plugins/">Voice Activity Detection</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../audio_plugins/">Audio Playback</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../lang_plugins/">Language Detection/Translation</a>
-                  </li>
-              </ul>
               <p class="caption"><span class="caption-text">Images</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="" href="../images_intro.md">Introduction</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../images_intro/">Introduction</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../buildroot/">Buildroot</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../images_buildroot/">Buildroot</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../manjaro/">Manjaro</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../images_manjaro/">Manjaro</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Other Builds</span></p>
@@ -224,6 +172,11 @@
                   <li class="toctree-l1"><a class="reference internal" href="../troubleshooting_plugins/">Troubleshooting Plugins</a>
                   </li>
               </ul>
+              <p class="caption"><span class="caption-text">HOWTO</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../howto_secure_ssh/">Howto secure ssh</a>
+                  </li>
+              </ul>
               <p class="caption"><span class="caption-text">Appendix</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../glossary/">Glossary</a>
@@ -254,7 +207,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
           <li>Configuration &raquo;</li>
-      <li>OVOS Config Assistant</li>
+      <li>CHanging the Wake Word</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -263,77 +216,67 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="oca-ovos-config-assistant">OCA - OVOS Config Assistant</h1>
-<p><a href="https://github.com/OpenVoiceOS/ovos-config-assistant">OCA</a> is a user facing interface to configure ovos devices</p>
-<h2 id="web-ui">Web UI</h2>
-<p>OCA provides a local Web UI similar to ovos-backend-manager, in here you can configure your device, view metrics, handle OAuth and more</p>
-<h2 id="cli">CLI</h2>
-<p>A command line interface is planned but not yet available to provide equivalent functionality to the Web UI</p>
-<h2 id="python-utils">Python utils</h2>
-<pre><code class="language-python">from ovos_config_assistant.module_helpers import pprint_core_module_info
-pprint_core_module_info()
-&quot;&quot;&quot;
-## Mycroft module info
-     can import mycroft     : True
-     is ovos-core           : True
-     mycroft module location: /home/user/ovos-core/mycroft
-
-## Downstream ovos.conf overrides
-Module: neon_core
-     can import neon_core     : False
-     neon_core module location: None
-     xdg compliance            : True
-     base xdg folder           : neon
-     mycroft config filename   : neon.conf
-     default mycroft.conf path :
-          /home/user/NeonCore/neon_core/configuration/neon.conf
-Module: hivemind
-     can import hivemind     : False
-     hivemind module location: None
-     xdg compliance            : True
-     base xdg folder           : hivemind
-     mycroft config filename   : hivemind.conf
-     default mycroft.conf path :
-          /home/user/PycharmProjects/ovos_workspace/ovos-core/.venv/lib/python3.9/site-packages/mycroft/configuration/mycroft.conf
-
-## Downstream module overrides:
-Module: neon_speech
-     uses config from   : neon_core
-     can import neon_speech     : False
-     neon_speech module location: None
-Module: neon_audio
-     uses config from   : neon_core
-     can import neon_audio     : False
-     neon_audio module location: None
-Module: neon_enclosure
-     uses config from   : neon_core
-     can import neon_enclosure     : False
-     neon_enclosure module location: None
-Module: hivemind_voice_satellite
-     uses config from   : hivemind
-     can import hivemind_voice_satellite     : True
-     hivemind_voice_satellite module location: /home/user/HiveMind-voice-sat/hivemind_voice_satellite
-&quot;&quot;&quot;
-
-from ovos_config_assistant.config_helpers import pprint_ovos_conf
-pprint_ovos_conf()
-&quot;&quot;&quot;
-## OVOS Configuration
- ovos.conf exists          : True
-      /home/user/.config/OpenVoiceOS/ovos.conf
- xdg compliance            : True
- base xdg folder           : mycroft
- mycroft config filename   : mycroft.conf
- default mycroft.conf path :
-      /home/user/ovos-core/.venv/lib/python3.9/site-packages/mycroft/configuration/mycroft.conf
-&quot;&quot;&quot;
-</code></pre>
+                <h1 id="wake-word-plugins">Wake Word Plugins</h1>
+<p>WakeWord plugins classify audio and report if a certain word or sound is present or not</p>
+<p>These plugins usually correspond to the name of the voice assistant, "hey mycroft", but can also be used for other purposes</p>
+<p><img alt="ww" src="https://github.com/secretsauceai/secret_sauce_ai/raw/main/SSAI_wakeword_scene_compressed.png?raw=true" /></p>
+<h2 id="list-of-wake-word-plugins">List of Wake Word plugins</h2>
+<table>
+<thead>
+<tr>
+<th>Plugin</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/OpenVoiceOS/ovos-ww-plugin-pocketsphinx">ovos-ww-plugin-pocketsphinx</a></td>
+<td>phonemes</td>
+</tr>
+<tr>
+<td><a href="https://github.com/OpenVoiceOS/ovos-ww-plugin-vosk">ovos-ww-plugin-vosk</a></td>
+<td>text samples</td>
+</tr>
+<tr>
+<td><a href="https://github.com/OpenVoiceOS/ovos-ww-plugin-snowboy">ovos-ww-plugin-snowboy</a></td>
+<td>model</td>
+</tr>
+<tr>
+<td><a href="https://github.com/OpenVoiceOS/ovos-ww-plugin-precise">ovos-ww-plugin-precise</a></td>
+<td>model</td>
+</tr>
+<tr>
+<td><a href="https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite">ovos-ww-plugin-precise-lite</a></td>
+<td>model</td>
+</tr>
+<tr>
+<td><a href="https://github.com/OpenVoiceOS/ovos-ww-plugin-nyumaya">ovos-ww-plugin-nyumaya</a></td>
+<td>model</td>
+</tr>
+<tr>
+<td><a href="https://github.com/OpenVoiceOS/ovos-ww-plugin-nyumaya-legacy">ovos-ww-plugin-nyumaya-legacy</a></td>
+<td>model</td>
+</tr>
+<tr>
+<td><a href="https://github.com/NeonGeckoCom/neon_ww_plugin_efnet">neon_ww_plugin_efficientwordnet</a></td>
+<td>model</td>
+</tr>
+<tr>
+<td><a href="https://github.com/forslund/mycroft-porcupine-plugin">mycroft-porcupine-plugin</a></td>
+<td>model</td>
+</tr>
+<tr>
+<td><a href="https://github.com/OpenVoiceOS/ovos_ww_plugin_hotkeys">ovos-ww-plugin-hotkeys</a></td>
+<td>keyboard</td>
+</tr>
+</tbody>
+</table>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../config_ovos_core/" class="btn btn-neutral float-left" title="OVOS Core Configuration"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../config_homescreen/" class="btn btn-neutral float-right" title="Homescreen Configuration">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../config_gui/" class="btn btn-neutral float-left" title="GUI Configuration"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../config_security/" class="btn btn-neutral float-right" title="OpenVoiceOS Security">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -356,10 +299,10 @@ pprint_ovos_conf()
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../config_ovos_core/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../config_gui/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../config_homescreen/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../config_security/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
